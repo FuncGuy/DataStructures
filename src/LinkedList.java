@@ -11,7 +11,7 @@ public class LinkedList {
 
         if (list.head == null) {
             list.head = new_node;
-        }else {
+        } else {
             Node last = list.head;
             while (last.next != null) {
                 last = last.next;
@@ -19,7 +19,6 @@ public class LinkedList {
             last.next = new_node;
         }
         return list;
-
     }
 
     public static void printList(LinkedList list){
@@ -30,8 +29,6 @@ public class LinkedList {
             System.out.println(temp_node.data);
             temp_node = temp_node.next;
         }
-
-
     }
 
     public static void main(String[] args) {
@@ -40,29 +37,9 @@ public class LinkedList {
 
         list = insert(list, "hello");
         list = insert(list, "world");
-
+        
         printList(list);
-
-
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     static class Node<T> {
         T data;
@@ -72,6 +49,4 @@ public class LinkedList {
             this.data = data;
         }
     }
-
-
 }
