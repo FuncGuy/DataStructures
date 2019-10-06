@@ -8,10 +8,9 @@ public class InsertAtFirst {
         head.next = new Node(2);
         head.next.next = new Node(4);
         head.next.next.next = new Node(5);
-
+        
         Node node = insertAtFirst(new Node(0), head);
-
-
+        
         printList(node);
 
     }
@@ -34,8 +33,6 @@ public class InsertAtFirst {
         head.next = tempNode;
 
         return head;
-
-
     }
 
     /* Node Class */
