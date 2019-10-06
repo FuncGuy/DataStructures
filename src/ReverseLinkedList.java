@@ -18,9 +18,7 @@ class ReverseLinkedList {
     }
 
     public Node reverse(Node node) {
-        
         //HINT::
-        
         //inorder to reverse a list just a find out next and prev nodes
         //and finally make head point to the last node
         Node prev = null;
