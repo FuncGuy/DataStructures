@@ -26,13 +26,13 @@ class ReverseLinkedList {
         Node curr = node;
 
         while (curr != null) {
-            next = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = next;
+            next = curr.next; // found next
+            curr.next = prev; // make curr.next = null
+            prev = curr; // wherever curr is pointing assign that to prev
+            curr = next; // wherever next is pointing assign that to current
         }
 
-        node = prev;
+        node = prev; // finally make last node in the list as head of node
         return node;
 
     }
